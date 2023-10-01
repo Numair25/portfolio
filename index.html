@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numair Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .btn1{
+            text-decoration: none;
+            color: white;
+        }
+
+        .link {
+            text-decoration: none;
+            color: white;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 43);
+        }
+
+
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(137, 137, 218);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 90px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+
+        }
+
+        .leftSection {
+            font-size: 2rem;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: rgb(20, 7, 20);
+            color: white;
+            border: 2px solid white;
+            border-radius: 3px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+
+        #element {
+            color: rgb(133, 36, 223);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 77vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            margin: 0 6vw;
+            background-color: white;
+        }
+
+        .image-top {
+            width: 32px;
+            position: relative;
+            top: -35px;
+            left: 9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 19px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            color: grey;
+            width: 150px;
+            font-size: 11px;
+            top: 85px;
+        }
+
+        footer {
+            background-color: rgb(6, 6, 24);
+        }
+
+        .footer {
+            display: flex;
+            padding: 23 122px;
+            justify-content: space-evenly;
+
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px;
+        }
+
+        .footerimg {
+            width: 25px;
+        }
+
+        @media screen and (max-width < 400px) {
+
+            .vertical-desc,
+            .vertical-title {
+                width: 110px !important;
+            }
+
+            .footer {
+                width: 400px !important;
+
+            }
+
+            .footer .footersecond {
+                font-size: 10px;
+            }
+
+            .contactme {
+                font-size: 15px;
+            }
+
+            .listed {
+                font-size: 12px;
+            }
+
+            .footer .footerfourth {
+                margin-top: 190px;
+                padding-right: 10px;
+                font-size: 10xp;
+            }
+
+            .footer .footerfirst {
+                font-size: 25px;
+
+            }
+
+            .nav1 {
+                font-size: 10px;
+            }
+
+            .right {
+                width: 500px;
+                flex-direction: column;
+
+            }
+
+
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .vertical-desc,
+            .vertical-title {
+                width: 110px !important;
+            }
+
+            .footer {
+                width: 400px !important;
+
+            }
+
+            .footer .footersecond {
+                margin-top: 70px;
+                font-size: 10px;
+            }
+
+            .contactme {
+                font-size: 25px;
+            }
+
+            .listed {
+                font-size: 14px;
+            }
+
+            .footer .footerfourth {
+                margin-top: 210px;
+                padding-right: 10px;
+                font-size: 10xp;
+            }
+
+            .footer .footerfirst {
+                font-size: 20px;
+
+            }
+
+            .nav1 {
+                font-size: 10px;
+            }
+
+            .right {
+                width: 500px;
+                flex-direction: column;
+
+            }
+
+
+        }
+
+        @media screen and (max-width: 1200px) {
+
+            .footer {
+                width: 700px;
+                margin-top: 1100px;
+            }
+
+            .leftSection {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .rightSection {
+                width: 350px !important;
+                display: flex;
+                margin-top: 100px;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                left: 45px;
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .secondSection .vertical {
+                height: unset;
+            }
+
+            .secondSection .box {
+                width: 50vw;
+            }
+
+            .firstSection {
+                flex-direction: column;
+            }
+
+
+            .body {
+                min-width: fit-content;
+            }
+
+            .image-top {
+                top: 122px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="left">Numair's Portfolio
+
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a class="nav1"
+                            href="https://drive.google.com/open?id=1UKu2-npZajXDlp50pOZv4c52-pHukE69&usp=drive_fs">Resume</a>
+                    </li>
+                    </a>
+                    <li><a class="nav1" href="#socials">Socials</a></li>
+                    </a>
+                    <li><a class="nav1" href="/">Projects</a></li>
+                    </a>
+                    <li><a class="nav1" href="#contact">Contact Me</a></li>
+                    </a>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div> Hi my name is <span class="purple">Numair</span></div>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com/u/0/uc?id=1UKu2-npZajXDlp50pOZv4c52-pHukE69&export=download">
+                        <button class="btn">Download Resume</button></a>
+                    <a class="btn1" href="https://github.com/"><button class="btn">Visit Github</a></button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png.png" alt="">
+                    <div class="vertical-title">
+                        HTML Developer
+                    </div>
+                    <div class="vertical-desc">So i have started learning HTML language , it is quit easy but still i
+                        have to learn alot and wanted to do master in this</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="css.png.png" alt="">
+                    <div class="vertical-title">
+                        CSS Developer
+                    </div>
+                    <div class="vertical-desc">So i have started learning CSS language , it is more fun to learn but
+                        still i have to learn alot and wanted to do master in this
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="javascript.png.svg" alt="">
+                    <div class="vertical-title">
+                        Java Script Developer
+                    </div>
+                    <div class="vertical-desc">So i have started learning JavaScript language , it is quit hard but
+                        still i have to learn alot and wanted to do master in this</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="corejava.png.png" alt="">
+                    <div class="vertical-title">
+                        Core Java
+                    </div>
+                    <div class="vertical-desc">So i have started learning Core Java language , it is quit complicated
+                        and i have just completed its basics but still i have to learn alot and wanted to do master in
+                        this</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="frontend.png.png" alt="">
+                    <div class="vertical-title">
+                        Frontend Developer
+                    </div>
+                    <div class="vertical-desc">So i have completed my HTML , CSS , JavaScript . It was an amazing
+                        experience and i am trying to do some project related to this and wanted to master</div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <footer class="firstfooter">
+        <div class="footer">
+            <h1 class="footerfirst">Numair Portfolio</h1>
+            <div class="footersecond">
+                <h2 id="socials">Socials</h2>
+                <ul>
+                    <li><a class="link" href="http://www.linkedin.com/in/mohammed-numair-92551b28a">
+                            <img class="footerimg" src="linkedin.png.png" alt="">Linkedin</a></li>
+                    <li> <a class="link" href="https://twitter.com/Numair25">
+                            <img class="footerimg" src="twitter.png.png" alt="">
+                            Twitter</a>
+                    </li>
+                </ul>
+                <div>
+                    <ul>
+                        <li>
+                            <a class="link" href="https://instagram.com/mohammed_numair_shaikh?igshid=OGQ5ZDc2ODk2ZA==">
+                                <img class="footerimg" src="insta.png.png">Instagram </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerfourth">
+                <h3 class="contactme" id="contact">Contact Details</h3>
+                <ul>
+                    <li class="listed">
+                        <img class="footerimg" src="phone.png" alt="">
+                        Phone no : 0000
+                    </li>
+
+                    <li class="listed">
+                        <img class="footerimg" src="email.png.png" alt="">
+                        Email : mohammednumair3978@gmail.com
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &copy; www.numairsportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Gamer', ' and love to learn new things'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+</html>
