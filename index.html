@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Numair Portfolio</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
@@ -14,7 +15,8 @@
             margin: 0;
             padding: 0;
         }
-        .btn1{
+
+        .btn1 {
             text-decoration: none;
             color: white;
         }
@@ -25,9 +27,15 @@
         }
 
         body {
-            background-color: rgb(0, 0, 33);
+            background-image: url('bgimg.jpg');
             color: white;
             font-family: 'Poppins', sans-serif;
+        }
+        header{
+            align-items: start;
+            overflow: hidden;
+            position: sticky;
+            top: 0;
         }
 
         nav {
@@ -35,7 +43,8 @@
             justify-content: space-between;
             align-items: center;
             height: 80px;
-            background-color: rgb(18, 18, 43);
+            background-color: rgb(20, 19, 19);
+        
         }
 
 
@@ -53,6 +62,7 @@
         nav ul li a {
             text-decoration: none;
             color: white;
+            
         }
 
         nav ul li a:hover {
@@ -62,7 +72,7 @@
 
         main hr {
             border: 0;
-            background-color: #9c97f1;
+            background-color: white;
             height: 1.2px;
             margin: 60px 84px;
         }
@@ -106,7 +116,7 @@
         }
 
         .purple {
-            color: blueviolet;
+            color: rgb(133, 36, 223);
         }
 
         .text-gray {
@@ -121,7 +131,7 @@
         .secondSection {
             max-width: 80vw;
             margin: auto;
-            height: 80vh;
+            height: 73vh;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -170,14 +180,14 @@
         }
 
         footer {
-            background-color: rgb(6, 6, 24);
+            background-color: rgb(20, 19, 19);
         }
 
         .footer {
             display: flex;
             padding: 23 122px;
             justify-content: space-evenly;
-
+            background-color: rgb(20, 19, 19);
         }
 
         .footer ul {
@@ -354,15 +364,14 @@
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <nav class="nav">
             <div class="left">Numair's Portfolio
 
             </div>
             <div class="right">
                 <ul>
-                    <li><a class="nav1"
-                            href="mycv.html">Resume</a>
+                    <li><a class="nav1" href="mycv.html">Resume</a>
                     </li>
                     </a>
                     <li><a class="nav1" href="#socials">Socials</a></li>
@@ -480,7 +489,7 @@
 
                     <li class="listed">
                         <img class="footerimg" src="email.png.png" alt="">
-                        Email : numairshaikh3978@gmail.com
+                        Email : mohammednumair3978@gmail.com
                     </li>
                 </ul>
             </div>
@@ -498,4 +507,5 @@
         });
     </script>
 </body>
+
 </html>
