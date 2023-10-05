@@ -152,16 +152,18 @@ footer .footer-rights {
     }
 
     .footer .footersecond {
-        margin-top: 70px;
+        margin-top: 60px;
         font-size: 10px;
     }
 
     .contactme {
-        font-size: 25px;
+        font-size: 19px;
+    margin-top: 13px;
     }
 
+
     .listed {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .footer .footerfourth {
