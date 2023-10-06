@@ -129,10 +129,6 @@ footer {
     list-style: none;
 }
 
-.footer>div {
-    width: 323px;
-}
-
 footer .footer-rights {
     text-align: center;
     color: gray;
@@ -143,37 +139,31 @@ footer .footer-rights {
     width: 25px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
 
     .footer {
         width: 400px !important;
-        top: 0;
 
     }
 
     .footer .footersecond {
-        margin-top: 60px;
         font-size: 10px;
     }
 
     .contactme {
-        font-size: 19px;
-    margin-top: 13px;
+        font-size: 20px;
+        margin-top: 57px !important;
     }
 
 
     .listed {
-        font-size: 13px;
+        margin-right: 90px;
+        font-size: 15px;
     }
 
-    .footer .footerfourth {
-        margin-top: 210px;
-        padding-right: 10px;
-        font-size: 10xp;
-    }
 
     .footer .footerfirst {
-        font-size: 20px;
+        font-size: 17px;
 
     }
 
