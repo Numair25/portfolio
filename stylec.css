@@ -1,5 +1,12 @@
+/* #myPDF{
+    width: 75%;
+    height: 975px;
+for pdf
+}
+  */
 
-header a{
+
+  header a{
     text-decoration: none;
 }
 @media screen and (max-width: 900Px) {
