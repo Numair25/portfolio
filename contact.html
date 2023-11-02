@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      body {
+        background: linear-gradient(330deg, rgb(7, 7, 7), rgb(196, 193, 193));
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+      }
+      .name {
+        color: white;
+        font-size: 40px;
+      }
+      .link {
+        display: flex;
+        text-decoration: none;
+        color: white;
+      }
+      .none {
+        list-style: none;
+      }
+      li a:hover {
+        font-size: 1.5rem;
+        color: black;
+      }
+      section {
+        width: 90vw;
+        height: 420px;
+        margin-left: 60px;
+        margin-top: 30px;
+        color: white;
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 30px;
+        padding-top: 15px;
+      }
+      .contact {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 45px;
+        padding-top: 19px;
+      }
+      .footerimg {
+        width: 25px;
+      }
+      .cdetails {
+        padding-top: 18px;
+      }
+      .contactme {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .listed {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .footer-rights {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: gray;
+        padding: 12px;
+      }
+
+      @media (max-width: 800px) {
+        nav {
+          width: 300px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        }
+        .name {
+          font-size: 26px;
+        }
+        .none {
+          font-size: 13px;
+        }
+        section {
+          margin: 0;
+          padding: 0;
+        }
+        .contact {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 25px;
+        }
+        .conatctc {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .content {
+          display: flex;
+          font-size: 20px;
+        }
+        .cdetails {
+          font-size: 18px;
+          padding-right: 50px;
+        }
+        li a:hover {
+          font-size: 1.5rem;
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="cnav">
+      <span class="name">Numair's Posrtfolio</span>
+      <ul>
+        <li class="none">
+          <a class="link" href="index.html">HOME</a>
+        </li>
+      </ul>
+    </nav>
+    <section>
+      <div class="box">
+        <h1 class="contact">CONTACT</h1>
+        <div class="content">
+          Your valuable questions, feedback, and comments are helpful for me,<br />
+          I am currently searching job opportunities for Web Developer role,<br />
+          If there is anything i can imporve please don't hesitate to reach me
+          out.
+        </div>
+        <div class="cdetails">
+          <h1 class="contactme" id="contactc">Contact Details</h1>
+          <ul>
+            <li class="listed">
+              <img class="footerimg" src="phone.png" alt="" />
+              <a class="link" href="tel:+8867507653"> 8867507653</a>
+            </li>
+
+            <li class="listed">
+              <img class="footerimg" src="email.png.png" alt="" />
+              <a class="link" href="mailto:numairshaikh3978@gmail.com">
+                numairshaikh3978@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <div class="footer-rights">
+      Copyright &copy; numair25.github.io/portfolio/ | All rights reserved
+    </div>
+  </body>
+</html>
