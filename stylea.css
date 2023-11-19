@@ -3,7 +3,7 @@ header a{
     text-decoration: none;
 }
 body{
-    background: linear-gradient(330deg, rgb(96, 96, 172), rgb(70, 38, 38));
+    background: linear-gradient(to right, rgb(96, 96, 172), rgb(70, 38, 38));
 }
 .secondSection {
     max-width: 100vw;

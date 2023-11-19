@@ -74,7 +74,12 @@ header {
 }
 
 .right li:hover {
-  background-color: gray;
+  border-radius: 50px;
+  background-color: black;
+  font-size: 1.2rem;
+  /* text-decoration: underline; */
+  /* color: white; */
+
 }
 
 main hr {

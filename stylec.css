@@ -11,11 +11,11 @@ for pdf
 }
 @media screen and (max-width: 900Px) {
     .resume{
- width: 400px;       
+ width: 100%;       
     }
 }
     @media screen and (max-width: 400Px) {
     .resume{
- width: 300px;       
+ width: 100%;       
     }
 }
