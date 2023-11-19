@@ -29,6 +29,10 @@
   text-decoration: none;
   color: white;
 }
+.link:hover{
+  text-decoration: underline;
+  color: rgb(127, 252, 252);
+}
 
 body {
   background: linear-gradient(330deg, black, silver);
