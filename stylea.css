@@ -2,6 +2,9 @@
 header a{
     text-decoration: none;
 }
+.shadow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 body{
     background: linear-gradient(to right, rgb(96, 96, 172), rgb(70, 38, 38));
 }

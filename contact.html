@@ -8,10 +8,16 @@
     <style>
       body {
         background: linear-gradient(#93A5CF , #E4EfE9);
+        height: 100%;
+        width: 100%;
+      }
+      header{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
       }
       nav {
         display: flex;
         justify-content: space-around;
+        /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
       }
       .name {
         color: rgb(13, 13, 196);
@@ -72,7 +78,8 @@
         justify-content: center;
         text-align: center;
         color: gray;
-        padding: 12px;
+        padding: 20vh 0;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       }
 
       @media (max-width: 800px) {
@@ -118,6 +125,7 @@
     </style>
   </head>
   <body>
+    <header>
     <nav class="cnav">
       <span class="name">Numair's Posrtfolio</span>
       <ul>
@@ -126,6 +134,7 @@
         </li>
       </ul>
     </nav>
+    </header>
     <section>
       <div class="box">
         <h1 class="contact">CONTACT</h1>
