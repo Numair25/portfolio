@@ -1,13 +1,11 @@
-#myPDF{
-    width: 100%;
-    height: 100vh;
+#myPDF {
+  width: 100%;
+  height: 100vh;
 }
- 
 
-
-  header a{
-    text-decoration: none;
- }
+header a {
+  text-decoration: none;
+}
 
 /*@media screen and (max-width: 900Px) {
     .resume{
