@@ -17,27 +17,52 @@
             align-items: center;
             position: sticky;
             top: 0;
-            backdrop-filter: blur(5px); 
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            backdrop-filter: blur(5px);
+            filter: drop-shadow(1rem 1rem 0.75rem #4444dd);
         }
 
-        a:hover {
-            color: goldenrod;
-        }
-        .clock{
-            padding-top: 15px;
+        .boxes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         img {
+            margin-top: 20px;
+            width: 70%;
             border-radius: 20px;
-            width: 100%;
-            border: 2px solid white;
         }
 
+        span {
+            filter: drop-shadow(1rem 1rem 0.75rem #4444dd);
+            color: white;
+        }
 
         a {
-            text-decoration: none;
             color: white;
+
+            text-decoration: none;
+        }
+
+        a:hover {
+            border-radius: 50px;
+            font-size: 2.2rem;
+            color: goldenrod;
+        }
+
+        @media (max-width: 700px) {
+            .boxes {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 20px;
+
+            }
         }
     </style>
 </head>
@@ -47,24 +72,46 @@
         <h1><a href="index.html">Numair's Portfolio</a>
         </h1>
     </nav>
-    <div class="clock">
-        <img class="image" src="clock.png" alt="">
+    <div class="boxes">
+        <span class="box1" id="1box">
+            <img src="To-Do List App - Google Chrome 12_14_2023 5_48_12 PM.png">
+            <h2><a href="https://numair25.github.io/To-Do-List/" target="_blank">To-Do List </a></h2>
+            <p>
+                "As a novice web developer, I've designed and developed a practice project - a functional to-do list.
+                This project showcases my grasp of web development fundamentals, including HTML, CSS, and JavaScript,
+                and serves as a practical exercise to enhance my skills."</p>
+        </span>
+        <span class="box1" id="2box">
+            <img src="zubair.png" alt="">
+            <h2><a href="https://mohammedzubair18.github.io/portfolio/index.html#" target="_blank">Portfolio Project</a>
+            </h2>
+            <p>
+                "As a budding web developer, I've meticulously curated and crafted a portfolio project list to bolster
+                my skills in web development. This list comprises diverse projects aimed at showcasing my expertise in
+                HTML, CSS, JavaScript, and other relevant technologies. Each project within this portfolio collection
+                serves as a stepping stone in my journey to becoming a proficient web developer."</p>
+        </span>
+
+        <span class="box1" id="3box">
+            <img src="Quize Website - Google Chrome 12_14_2023 6_33_21 PM.png" alt="">
+            <h2><a href="https://mohammedzubair18.github.io/portfolio/index.html#" target="_blank">Quiz App</a></h2>
+            <p>
+                "As an aspiring web developer, I've diligently constructed a quiz app project to fortify my programming
+                skills. This project encompasses the creation of an interactive quiz application using HTML, CSS, and
+                JavaScript. Through this endeavor, I aim to deepen my understanding of frontend development concepts
+                while mastering the implementation of user-friendly interfaces and dynamic functionalities."</p>
+        </span>
+
+        <span class="box1" id="4box">
+            <img src="clock.png" alt="">
+            <h2><a href="https://mohammedzubair18.github.io/portfolio/index.html#" target="_blank">Digital Clock</a>
+            </h2>
+            <p>"As a budding web developer, I've successfully crafted a digital clock project to enhance my coding
+                expertise. This undertaking involves the development of a functional and visually appealing digital
+                clock using HTML, CSS, and JavaScript. Through this initiative, I've aimed to refine my skills in
+                frontend development, mastering the creation of a responsive and efficient digital clock interface."</p>
+        </span>
     </div>
-    <span><a href="https://numair25.github.io/digitalclock/" target="_blank">
-            <h1>Digital Clock</h1>
-        </a></span>
-    Click on this <a href="https://numair25.github.io/digitalclock/">"Digital Clock"</a> to see the presnt time in
-    "Indian standard Date , Day and Time"
-<p></p>
-    <div class="clock">
-        <img class="image" src="zubair.png" alt="">
-    </div>
-    <span><a href="https://mohammedzubair18.github.io/portfolio/index.html#" target="_blank" >
-            <h1>Zubair's Portfolio</h1>
-        </a></span>
-    Click on this <a href="https://numair25.github.io/digitalclock/">"Zubair's Portfolio"</a> to see another portfolio i have made for my brother
-    
-    
 </body>
 
 </html>
