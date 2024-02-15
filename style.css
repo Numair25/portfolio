@@ -34,7 +34,7 @@
   color: rgb(127, 252, 252);
 }
 body::-webkit-scrollbar{
-  display: none;
+  display: none !important;
 }
 body {
   background: linear-gradient(330deg, black, silver);
