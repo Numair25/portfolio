@@ -169,27 +169,56 @@ body {
     .right ul {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1.5rem;
         width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
     .right ul li {
         width: 100%;
         text-align: center;
+        list-style: none;
     }
 
     .right ul li a {
         display: block;
-        padding: 1rem;
+        padding: 1.2rem;
         font-size: 1.2rem;
         width: 100%;
-        border-radius: 8px;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .right ul li a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--accent-color);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: -1;
+    }
+
+    .right ul li a:hover::before,
+    .right ul li a.active::before {
+        opacity: 1;
     }
 
     .right ul li a:hover,
     .right ul li a.active {
-        background: var(--accent-color);
         color: white;
+        transform: translateY(-2px);
+    }
+
+    .right ul li a i {
+        margin-right: 0.8rem;
+        font-size: 1.1rem;
     }
 
     .toggle-button.active .bar:nth-child(1) {
@@ -219,9 +248,18 @@ body {
         padding: 5rem 1.5rem 1.5rem;
     }
 
+    .right ul {
+        gap: 1.2rem;
+    }
+
     .right ul li a {
+        padding: 1rem;
         font-size: 1.1rem;
-        padding: 0.8rem;
+    }
+
+    .right ul li a i {
+        margin-right: 0.6rem;
+        font-size: 1rem;
     }
 }
 
