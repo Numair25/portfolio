@@ -121,6 +121,7 @@ body {
 @media (max-width: 768px) {
     .toggle-button {
         display: flex;
+        z-index: 1001;
     }
 
     .right {
@@ -131,8 +132,9 @@ body {
         height: calc(100vh - 70px);
         background: rgba(255, 255, 255, 0.98);
         backdrop-filter: blur(10px);
-        transition: all 0.3s ease;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         padding: 2rem;
+        overflow-y: auto;
     }
 
     .right.active {
@@ -142,11 +144,21 @@ body {
     .right ul {
         flex-direction: column;
         align-items: center;
-        gap: 1.5rem;
+        gap: 2rem;
+        padding-top: 2rem;
     }
 
     .right ul li a {
         font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .right ul li a.active {
+        background: var(--accent-color);
+        color: white;
+        border-radius: 8px;
     }
 
     .toggle-button.active .bar:nth-child(1) {
@@ -159,6 +171,78 @@ body {
 
     .toggle-button.active .bar:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+/* Tablet Breakpoint */
+@media (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 5%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .hero-image {
+        margin-top: 2rem;
+    }
+
+    .projects-grid, .certificates-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile Breakpoint */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .projects-grid, .certificates-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        margin-bottom: 2rem;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact-info {
+        margin-bottom: 2rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
     }
 }
 
@@ -350,8 +434,9 @@ body.dark-mode .right ul li a {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    padding: 2rem 0;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -407,6 +492,7 @@ body.dark-mode .right ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    padding: 2rem 0;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -421,6 +507,7 @@ body.dark-mode .right ul li a {
 
 .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-card img {
@@ -478,6 +565,7 @@ body.dark-mode .right ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    padding: 2rem 0;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -487,6 +575,11 @@ body.dark-mode .right ul li a {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .certificate-card img {
@@ -870,4 +963,19 @@ html {
     .skills-grid, .projects-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Enhanced Grid Layouts */
+.projects-grid, .certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
 }
