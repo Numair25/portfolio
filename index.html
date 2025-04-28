@@ -13,16 +13,33 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <link rel="icon" href="bg.png.png">
+    <meta name="description" content="Portfolio of Mohammed Numair - Full Stack Developer specializing in Laravel, PHP, and modern web technologies">
+    <meta name="keywords" content="Full Stack Developer, Laravel Developer, PHP Developer, Web Developer, Portfolio">
 </head>
 
 <body>
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-inner"></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
     <header>
         <nav class="nav">
-            <div class="left">M. Numair</div>
+            <a href="#" class="left">M. Numair</a>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
-                <span class="bar"></span> 
+                <span class="bar"></span>
             </a>
             <div class="right">
                 <ul>
@@ -39,10 +56,10 @@
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Mohammed Numair</span></h1>
-                <h2>Full Stack Developer</h2>
-                <p>Passionate about creating elegant solutions to complex problems</p>
-                <div class="hero-buttons">
+                <h1 class="animate-text">Hi, I'm <span class="highlight">Mohammed Numair</span></h1>
+                <h2 class="animate-text">Full Stack Developer</h2>
+                <p class="animate-text">Passionate about creating elegant solutions to complex problems</p>
+                <div class="hero-buttons animate-text">
                     <a href="NumairCV.pdf" download class="btn primary-btn">
                         <i class="fas fa-download"></i> Download Resume
                     </a>
@@ -52,7 +69,7 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="bg.png.png" alt="Profile Image">
+                <img src="bg.png.png" alt="Profile Image" class="animate-image">
             </div>
         </section>
 
