@@ -5,93 +5,258 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numair Portfolio</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Mohammed Numair - Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link rel="icon" href="bg.png.png">
+    <link rel="icon" href="images/bg.png.png">
 </head>
 
 <body>
     <header>
         <nav class="nav">
-            <div class="left">Numair's Portfolio</div>
+            <div class="left">M. Numair</div>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
-                <span class="bar"></span>
+                <span class="bar"></span> 
             </a>
             <div class="right">
                 <ul>
-                    <li><a class="nav1" href="mycv.html">Resume</a></li>
-                    <li><a class="nav1" href="#socials">Socials</a></li>
-                    <li><a class="nav1" href="project.html">Projects</a></li>
-                    <li><a class="nav1" href="certificate.html">Certificate</a></li>
-                    <li><a class="nav1" href="about.html">About Me</a></li>
-                    <li><a class="nav1" href="contact.html">Contact Me</a></li>
+                    <li><a class="nav1" href="#about">About</a></li>
+                    <li><a class="nav1" href="#skills">Skills</a></li>
+                    <li><a class="nav1" href="#projects">Projects</a></li>
+                    <li><a class="nav1" href="#certificates">Certificates</a></li>
+                    <li><a class="nav1" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="firstSection">
-            <div class="leftSection">
-                <div> Hi my name is <span class="purple">Numair</span></div>
-                <div>and I am passionate</div>
-                <span id="element"></span>
-                <div class="buttons">
-                    <a href="NumairCV.pdf" download>
-                        <button class="btn">Download Resume</button>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="highlight">Mohammed Numair</span></h1>
+                <h2>Full Stack Developer</h2>
+                <p>Passionate about creating elegant solutions to complex problems</p>
+                <div class="hero-buttons">
+                    <a href="NumairCV.pdf" download class="btn primary-btn">
+                        <i class="fas fa-download"></i> Download Resume
                     </a>
-                    <a class="btn1" target="_blank" href="https://github.com/Numair25">
-                        <button class="btn">Visit Github</button>
+                    <a href="https://github.com/Numair25" target="_blank" class="btn secondary-btn">
+                        <i class="fab fa-github"></i> View GitHub
                     </a>
                 </div>
             </div>
-            <div class="rightSection">
-                <img src="bg.png.png" alt="">
+            <div class="hero-image">
+                <img src="images/bg.png.png" alt="Profile Image">
             </div>
         </section>
-        <hr>
+
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I am a dedicated Full Stack Developer with expertise in Laravel, PHP, and modern web technologies. Currently focused on expanding my knowledge in Laravel development and building robust web applications.</p>
+                <div class="tech-stack">
+                    <h3>Tech Stack</h3>
+                    <div class="tech-icons">
+                        <div class="tech-item">
+                            <img src="images/html.png.png" alt="HTML5">
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/css.png.png" alt="CSS3">
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/javascript.png.svg" alt="JavaScript">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item">
+                            <img src="images/corejava.png.png" alt="Java">
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="section-buttons">
+                    <a href="about.html" class="btn primary-btn">
+                        <i class="fas fa-user"></i> Learn More About Me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-item">
+                        <span>HTML5 & CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-item">
+                        <span>PHP</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Laravel</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>MySQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/To-Do List App - Google Chrome 12_14_2023 5_48_12 PM.png" alt="To-Do List App">
+                    <h3>To-Do List App</h3>
+                    <p>A task management application built with modern web technologies</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Numair25/To-Do-List" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="https://numair25.github.io/To-Do-List/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/Quize Website - Google Chrome 12_14_2023 6_33_21 PM.png" alt="Quiz App">
+                    <h3>Quiz App</h3>
+                    <p>Interactive quiz application with dynamic content</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Numair25/QuizzApp" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="https://numair25.github.io/QuizzApp/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/clock.png" alt="Digital Clock">
+                    <h3>Digital Clock</h3>
+                    <p>A sleek and functional digital clock with modern design</p>
+                    <div class="project-links">
+                        <a href="https://github.com/Numair25/digitalclock" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="https://numair25.github.io/digitalclock/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="certificates-section">
+            <h2>Certificates</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <img src="images/My Full stack certificate.jpg" alt="Full Stack Certificate">
+                    <h3>Full Stack Development</h3>
+                    <p>Certificate in Full Stack Web Development</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email: numair.shaikh@example.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>Phone: +91 1234567890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Location: Gulbarga, Karnataka, India</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer class="firstfooter">
-        <div class="footer">
-            <h1 class="footerfirst">Numair Portfolio</h1>
-        </div>
-        <div class="footersecond">
-            <h2 id="socials">Socials</h2>
-            <ul>
-                <li>
-                    <a class="link" target="_blank"
-                        href="https://instagram.com/mohammed_numair_shaikh?igshid=OGQ5ZDc2ODk2ZA==">
-                        <img class="footerimg" src="insta.png.png" alt="">Instagram
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Connect with Me</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mohammed-numair-92551b28a" target="_blank">
+                        <i class="fab fa-linkedin"></i>
                     </a>
-                </li>
-                <li>
-                    <a class="link" target="_blank" href="http://www.linkedin.com/in/mohammed-numair-92551b28a">
-                        <img class="footerimg" src="linkedin.png.png" alt="">Linkedin
+                    <a href="https://github.com/Numair25" target="_blank">
+                        <i class="fab fa-github"></i>
                     </a>
-                </li>
-                <li>
-                    <a class="link" target="_blank" href="https://twitter.com/Numair25">
-                        <img class="footerimg" src="twitter.png.png" alt="">Twitter
+                    <a href="https://instagram.com/mohammed_numair_shaikh" target="_blank">
+                        <i class="fab fa-instagram"></i>
                     </a>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-rights">
-            Copyright &copy; numair25.github.io/portfolio/ | All rights reserved
+                    <a href="https://twitter.com/Numair25" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mohammed Numair. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Web Designer', 'Gamer', 'to learn new things'],
+            strings: ['Full Stack Developer', 'Laravel Developer', 'Web Designer', 'Problem Solver'],
             typeSpeed: 50,
+            loop: true
         });
     </script>
 </body>

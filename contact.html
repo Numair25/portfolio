@@ -2,168 +2,146 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me - Mohammed Numair</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="icon" href="bg.png.png">
-    <title>Contact</title>
-    <style>
-      body {
-        background: linear-gradient(#93A5CF , #E4EfE9);
-        height: 100%;
-        width: 100%;
-      }
-      header{
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-      }
-      nav {
-        display: flex;
-        justify-content: space-around;
-        /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
-      }
-      .name {
-        color: rgb(13, 13, 196);
-        font-size: 40px;
-      }
-      .link {
-        display: flex;
-        text-decoration: none;
-        color: rgb(13, 13, 196);
-      }
-      .none {
-        list-style: none;
-      }
-      li a:hover {
-        font-size: 1.5rem;
-        color: goldenrod;
-        border-radius: 10px;
-        background-color: gray;
-      }
-      section {
-        width: 90vw;
-        height: 420px;
-        margin-left: 60px;
-        margin-top: 30px;
-      }
-      .content {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-size: 30px;
-        padding-top: 15px;
-      }
-      .contact {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        font-size: 45px;
-        padding-top: 19px;
-      }
-      .footerimg {
-        width: 25px;
-      }
-      .cdetails {
-        padding-top: 18px;
-      }
-      .contactme {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .listed {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      .footer-rights {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        color: gray;
-        padding: 20vh 0;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-      }
-
-      @media (max-width: 800px) {
-        nav {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-        }
-        .name {
-          font-size: 26px;
-        }
-        .none {
-          font-size: 13px;
-        }
-        section {
-          margin: 0;
-          padding: 0;
-        }
-        .contact {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 25px;
-        }
-        .conatctc {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        .content {
-          display: flex;
-          font-size: 20px;
-        }
-        .cdetails {
-          font-size: 18px;
-          padding-right: 50px;
-        }
-        li a:hover {
-          font-size: 1.5rem;
-          color: goldenrod;
-        }
-      }
-    </style>
   </head>
   <body>
     <header>
-    <nav class="cnav">
-      <span class="name">Numair's Posrtfolio</span>
-      <ul>
-        <li class="none">
-          <a class="link" href="index.html">HOME</a>
-        </li>
-      </ul>
-    </nav>
-    </header>
-    <section>
-      <div class="box">
-        <h1 class="contact">CONTACT</h1>
-        <div class="content">
-          Your valuable questions, feedback, and comments are helpful for me,<br />
-          I am currently searching job opportunities for Web Developer role,<br />
-          If there is anything i can imporve please don't hesitate to reach me
-          out.
-        </div>
-        <div class="cdetails">
-          <h1 class="contactme" id="contactc">Contact Details</h1>
+      <nav class="nav">
+        <div class="left">M. Numair</div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="right">
           <ul>
-            <li class="listed">
-              <img class="footerimg" src="phone.png" alt="" />
-              <a class="link" href="tel:+8867507653"> 8867507653</a>
-            </li>
-
-            <li class="listed">
-              <img class="footerimg" src="email.png.png" alt="" />
-              <a class="link" href="mailto:numairshaikh3978@gmail.com">
-                numairshaikh3978@gmail.com</a
-              >
-            </li>
+            <li><a class="nav1" href="index.html">Home</a></li>
+            <li><a class="nav1" href="about.html">About</a></li>
+            <li><a class="nav1" href="#skills">Skills</a></li>
+            <li><a class="nav1" href="#projects">Projects</a></li>
+            <li><a class="nav1" href="certificate.html">Certificates</a></li>
+            <li><a class="nav1 active" href="contact.html">Contact</a></li>
           </ul>
         </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Contact Information</h3>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>numair.shaikh@example.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 1234567890</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Gulbarga, Karnataka, India</p>
+              </div>
+            </div>
+            <div class="section-buttons">
+                <a href="about.html" class="btn primary-btn">
+                    <i class="fas fa-user"></i> About Me
+                </a>
+                <a href="skills.html" class="btn secondary-btn">
+                    <i class="fas fa-code"></i> My Skills
+                </a>
+                <a href="projects.html" class="btn primary-btn">
+                    <i class="fas fa-project-diagram"></i> My Projects
+                </a>
+            </div>
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/mohammed-numair-92551b28a" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/Numair25" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://instagram.com/mohammed_numair_shaikh" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://twitter.com/Numair25" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </div>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <h3>Send Me a Message</h3>
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn primary-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Connect with Me</h3>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/mohammed-numair-92551b28a" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Numair25" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://instagram.com/mohammed_numair_shaikh" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com/Numair25" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Mohammed Numair. All rights reserved.</p>
+        </div>
       </div>
-    </section>
-    <div class="footer-rights">
-      Copyright &copy; numair25.github.io/portfolio/ | All rights reserved
-    </div>
+    </footer>
+
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        // Add your form submission logic here
+        alert('Thank you for your message! I will get back to you soon.');
+        this.reset();
+      });
+    </script>
   </body>
 </html>

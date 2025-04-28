@@ -5,65 +5,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate</title>
+    <title>Certificates - Mohammed Numair</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="icon" href="bg.png.png">
 </head>
-<style>
-    /* #myPDF{
-    width: 75%;
-    height: 975px;
-for pdf
-}
-  */
-body{
-    background: linear-gradient( #E4F3E3, #5CA9E9);
-}
-    header {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-
-    header a {
-        text-decoration: none;
-    }
-
-    h1 {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 20px;
-    }
-
-    .certificate {
-        padding-top: 35px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
-    }
-
-    @media screen and (max-width: 900Px) {
-        .certificate {
-            width: 100%;
-            height: 100%;
-            padding-top: 35px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        }
-    }
-
-    @media screen and (max-width: 400Px) {
-        .certificate {
-            width: 100%;
-            height: 100%;
-        }
-    }
-</style>
 
 <body>
     <header>
-        <h1>Certificates</h1>
-        <button><a href="index.html">
-                <b>Home</b></a></button>
+        <nav class="nav">
+            <div class="left">M. Numair</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="right">
+                <ul>
+                    <li><a class="nav1" href="index.html">Home</a></li>
+                    <li><a class="nav1" href="about.html">About</a></li>
+                    <li><a class="nav1" href="#skills">Skills</a></li>
+                    <li><a class="nav1" href="#projects">Projects</a></li>
+                    <li><a class="nav1 active" href="certificate.html">Certificates</a></li>
+                    <li><a class="nav1" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <img class="certificate" src="My Full stack certificate.jpg">
-    <!-- <iframe id="myPDF" src="NumairCV.pdf" frameborder="0"></iframe> for pdf -->
+
+    <main>
+        <section id="certificates" class="certificates-section">
+            <h2>My Certificates</h2>
+            <div class="section-buttons">
+                <a href="about.html" class="btn primary-btn">
+                    <i class="fas fa-user"></i> About Me
+                </a>
+                <a href="skills.html" class="btn secondary-btn">
+                    <i class="fas fa-code"></i> My Skills
+                </a>
+                <a href="projects.html" class="btn primary-btn">
+                    <i class="fas fa-project-diagram"></i> My Projects
+                </a>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="certificate1.jpg" alt="Full Stack Development Certificate">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Full Stack Development</h3>
+                        <p>Issued by: XYZ Academy</p>
+                        <p>Date: January 2024</p>
+                        <p>Skills: HTML, CSS, JavaScript, React, Node.js, MongoDB</p>
+                        <a href="#" class="btn primary-btn">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="certificate2.jpg" alt="Web Development Certificate">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Web Development Fundamentals</h3>
+                        <p>Issued by: ABC Institute</p>
+                        <p>Date: December 2023</p>
+                        <p>Skills: HTML, CSS, JavaScript, Responsive Design</p>
+                        <a href="#" class="btn primary-btn">View Certificate</a>
+                    </div>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-image">
+                        <img src="certificate3.jpg" alt="JavaScript Certificate">
+                    </div>
+                    <div class="certificate-content">
+                        <h3>Advanced JavaScript</h3>
+                        <p>Issued by: DEF University</p>
+                        <p>Date: November 2023</p>
+                        <p>Skills: ES6+, DOM Manipulation, Async Programming</p>
+                        <a href="#" class="btn primary-btn">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Connect with Me</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mohammed-numair-92551b28a" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Numair25" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com/mohammed_numair_shaikh" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/Numair25" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mohammed Numair. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

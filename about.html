@@ -5,69 +5,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="stylea.css">
+    <title>About Me - Mohammed Numair</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <link rel="icon" href="bg.png.png">
 </head>
 
 <body>
     <header>
-
-        <button><a href="index.html">
-                <b>Home</b></a></button>
+        <nav class="nav">
+            <div class="left">M. Numair</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="right">
+                <ul>
+                    <li><a class="nav1" href="index.html">Home</a></li>
+                    <li><a class="nav1 active" href="about.html">About</a></li>
+                    <li><a class="nav1" href="skills.html">Skills</a></li>
+                    <li><a class="nav1" href="projects.html">Projects</a></li>
+                    <li><a class="nav1" href="certificate.html">Certificates</a></li>
+                    <li><a class="nav1" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <section class="secondSection">
-        <span class="text-gray shadow">What I have done so far</span>
-        <h1 class="shadow">What have I learned</h1>
 
-        <div class="box">
-            <div class="vertical">
-                <img class="image-top" src="html.png.png" alt="">
-                <div class="vertical-title">
-                    HTML Developer
+    <main>
+        <section id="about" class="about-section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="bg.png.png" alt="Mohammed Numair">
                 </div>
-                <div class="vertical-desc">So i have started learning HTML language , it is quit easy but still i
-                    have to learn alot and wanted to do master in this</div>
-            </div>
-            <div class="vertical">
-                <img class="image-top" src="css.png.png" alt="">
-                <div class="vertical-title">
-                    CSS Developer
-                </div>
-                <div class="vertical-desc">So i have started learning CSS language , it is more fun to learn but
-                    still i have to learn alot and wanted to do master in this
-                </div>
-            </div>
-            <div class="vertical">
-                <img class="image-top" src="javascript.png.svg" alt="">
-                <div class="vertical-title">
-                    Java Script Developer
-                </div>
-                <div class="vertical-desc">So i have started learning JavaScript language , it is quit hard but
-                    still i have to learn alot and wanted to do master in this</div>
-            </div>
-            <div class="vertical">
-                <img class="image-top" src="corejava.png.png" alt="">
-                <div class="vertical-title">
-                    Core Java
-                </div>
-                <div class="vertical-desc">So i have started learning Core Java language , it is quit complicated
-                    and i have just completed its basics but still i have to learn alot and wanted to do master in
-                    this</div>
-            </div>
-            <div class="vertical">
-                <img class="image-top" src="frontend.png.png" alt="">
-                <div class="vertical-title">
-                    Frontend Developer
-                </div>
-                <div class="vertical-desc">So i have completed my HTML , CSS , JavaScript . It was an amazing
-                    experience and i am trying to do some project related to this and wanted to master</div>
-            </div>
+                <div class="about-text">
+                    <h3>Full Stack Developer</h3>
+                    <p>I am a passionate Full Stack Developer with expertise in Laravel, PHP, and modern web technologies. My journey in web development began with a strong foundation in frontend technologies and has evolved to include backend development.</p>
+                    
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>Bachelor's Degree in Computer Science</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Experience</h4>
+                                <p>2+ years of web development experience</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-code"></i>
+                            <div>
+                                <h4>Specialization</h4>
+                                <p>Full Stack Development, Laravel, PHP</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="section-buttons">
+                        <a href="skills.html" class="btn primary-btn">
+                            <i class="fas fa-code"></i> View Skills
+                        </a>
+                        <a href="projects.html" class="btn secondary-btn">
+                            <i class="fas fa-project-diagram"></i> View Projects
+                        </a>
+                        <a href="certificate.html" class="btn primary-btn">
+                            <i class="fas fa-certificate"></i> View Certificates
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend Development</h3>
+                    <div class="skill-item">
+                        <span>HTML5 & CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend Development</h3>
+                    <div class="skill-item">
+                        <span>PHP</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Laravel</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>MySQL</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Connect with Me</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/mohammed-numair-92551b28a" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Numair25" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://instagram.com/mohammed_numair_shaikh" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://twitter.com/Numair25" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Mohammed Numair. All rights reserved.</p>
+            </div>
         </div>
-
-    </section>
-
+    </footer>
 </body>
 
 </html>
