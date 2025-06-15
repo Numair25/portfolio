@@ -162,6 +162,10 @@ body {
         overflow-y: auto;
     }
 
+    .right ul li a {
+        color: var(--text-color);
+    }
+
     .right.active {
         left: 0;
     }
